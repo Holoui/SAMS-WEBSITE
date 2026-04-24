@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – SAMS Homes & Apartments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-brand"><span>SAMS</span>HOMES &<br>APARTMENTS</div>
+    <ul class="nav-links">
+      <li><a href="/Home/index.html">HOME</a></li>
+      <li><a href="/About/about.html">SERVICES</a></li>
+      <li><a href="/Portfolio/portfolio.html">PORTFOLIO</a></li>
+      <li><a href="/Gallery/gallery.html" class="active">GALLERY</a></li>
+      <li><a href="/Contact/contact.html">CONTACT US</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">GET A QUOTE</a>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <div class="ph-left">
+      <div class="section-badge">Our Gallery</div>
+      <hr class="ph-divider">
+    </div>
+    <div class="ph-right">
+      <h1>Take A Look At <span>Our Latest<br>Blog</span> & Articles</h1>
+      <p>We encourage clients to actively participate in discussions, share their ideas, preferences and feedbacks.</p>
+    </div>
+  </div>
+
+  <!-- BLOG CARDS -->
+  <div class="blog-row">
+    <div class="blog-card">
+      <img src="/Images/photo_5916001925222567188_y.jpg" alt="Blog 1">
+      <div class="blog-meta">FEB 21, 2026 &nbsp; <span>By Admin</span></div>
+    </div>
+    <div class="blog-card">
+      <img src="/Images/photo_5909276182530690410_y.jpg" alt="Blog 2">
+      <div class="blog-meta">FEB 21, 2026 &nbsp; <span>By Admin</span></div>
+    </div>
+    <div class="blog-card">
+      <img src="/Images/photo_5916001925222567191_y.jpg" alt="Blog 3">
+      <div class="blog-meta">FEB 21, 2026 &nbsp; <span>By Admin</span></div>
+    </div>
+  </div>
+
+  <!-- GALLERY MOSAIC -->
+  <div class="gallery-section">
+    <div class="gallery-wm">GALLERY<br>GALLERY<br>GALLERY</div>
+    <div class="gallery-grid">
+      <div class="gallery-big">
+        <img src="/Images/photo_5909276182530690411_y.jpg" alt="Living Room">
+      </div>
+      <div class="gallery-right">
+        <div class="gallery-right-top">
+          <img src="/Images/photo_5909276182530690413_y.jpg" alt="House">
+        </div>
+        <div class="gallery-right-top">
+          <img src="/Images/photo_5916001925222567188_y.jpg" alt="Interior">
+        </div>
+      </div>
+    </div>
+    <div class="gallery-bottom-row">
+      <div class="gi"><img src="/Images/photo_5909276182530690415_y.jpg" alt="House 1"></div>
+      <div class="gi"><img src="/Images/photo_5909276182530690414_y.jpg" alt="House 2"></div>
+      <div class="gi"><img src="/Images/photo_5916001925222567184_x.jpg" alt="House 3"></div>
+    </div>
+    <a href="#" class="browse-btn"><span class="arrow">▶</span>BROWSE<br>MORE</a>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="section-badge" style="margin:0 auto 20px;">SUBSCRIBE TO OUR PAGE</div>
+    <h2>Join <span>Our Newsletter</span><br><span style="color:var(--orange)">Stay</span> Up To Date</h2>
+    <p>Join our newsletter, learn something new, gain access to exclusive content and stay informed with the latest
+      updates in the industry.</p>
+    <form class="email-form" onsubmit="return false;">
+      <input type="email" placeholder="Email address...">
+      <button type="submit">▶</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div style="font-weight:900;font-size:15px;line-height:1.2;color:#fff;"><span
+            style="color:var(--orange);display:block;font-size:18px;">SAMS</span>HOME &<br>APARTMENTS</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);margin-top:8px;">We Transform Your Vision Into Beautiful
+          Reality</p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="about.html" class="hl">ABOUT US</a></li>
+          <li><a href="about.html">SERVICES</a></li>
+          <li><a href="#">CAREERS</a></li>
+          <li><a href="#">OUR TEAM</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="portfolio.html">OUR PROJECTS</a></li>
+          <li><a href="#">PARTNERS</a></li>
+          <li><a href="#">PARTNERS PROGRAM</a></li>
+          <li><a href="#">AFFILIATE PROGRAM</a></li>
+          <li><a href="#">TERMS & CONDITIONS</a></li>
+          <li><a href="#">SUPPORT CENTER</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">0245194965<br><span
+          style="font-size:11px;color:rgba(255,255,255,0.6);">KOFIARHINSAMMY111@GMAIL.COM</span></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Copyright 2026, <span>SAMS HOME & APARTMENTS</span>. All rights reserved.</p>
+      <div>
+        <div class="footer-logo-box"><span class="footer-wordmark">SAMS</span></div>
+      </div>
+      <div class="footer-wordmark-sub">HOME & APARTMENTS</div>
+    </div>
+  </footer>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Gallery Animations -->
+  <script src="gallery-animations.js"></script>
+
+</body>
+
+</html>

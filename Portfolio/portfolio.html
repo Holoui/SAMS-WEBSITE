@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – SAMS Homes & Apartments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-brand"><span>SAMS</span>HOMES &<br>APARTMENTS</div>
+    <ul class="nav-links">
+      <li><a href="/Home/index.html">HOME</a></li>
+      <li><a href="/About/about.html">SERVICES</a></li>
+      <li><a href="/Portfolio/portfolio.html" class="active">PORTFOLIO</a></li>
+      <li><a href="/Gallery/gallery.html">GALLERY</a></li>
+      <li><a href="/Contact/contact.html">CONTACT US</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">GET A QUOTE</a>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <div class="ph-left">
+      <div class="section-badge">OUR PORTFOLIO</div>
+      <hr class="ph-divider">
+    </div>
+    <div class="ph-right">
+      <h1>Creative <span>Projects<br>That Define</span> Our Style</h1>
+      <p>Our portfolio showcases a diverse range of projects, from beautiful crafted residential spaces functional and
+        stylish commercial interiors</p>
+    </div>
+  </div>
+
+  <!-- CAROUSEL -->
+  <div class="carousel-wrap">
+    <div class="carousel-track" id="track">
+      <div class="carousel-slide">
+        <img src="/Images/photo_5916001925222567180_y.jpg" alt="Luxury Skyline">
+        <div class="slide-tags"><span class="tag">RESIDENTIAL</span><span class="tag">4 BED ROOMS</span></div>
+        <div class="slide-label">
+          <div class="title">LUXURY SKYLINE</div>
+          <div class="sub">East Legon, Accra.</div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="/Images/photo_5916001925222567182_y.jpg" alt="Modern Villa">
+        <div class="slide-tags"><span class="tag">RESIDENTIAL</span><span class="tag">5 BED ROOMS</span></div>
+        <div class="slide-label">
+          <div class="title">MODERN VILLA</div>
+          <div class="sub">Airport Hills, Accra.</div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="/Images/photo_5916001925222567187_y.jpg" alt="Urban Retreat">
+        <div class="slide-tags"><span class="tag">COMMERCIAL</span><span class="tag">OFFICE SPACE</span></div>
+        <div class="slide-label">
+          <div class="title">URBAN RETREAT</div>
+          <div class="sub">Cantonments, Accra.</div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn prev" onclick="move(-1)">◀</button>
+    <button class="carousel-btn next" onclick="move(1)">▶</button>
+  </div>
+
+  <!-- LUXURY BG SECTION -->
+  <div class="luxury-section">
+    <div class="luxury-wm">LUXURY B</div>
+    <div class="luxury-grid">
+      <div class="luxury-img luxury-img--main">
+        <img src="/Images/lux building 1.jpg">
+      </div>
+      <div class="luxury-img luxury-img--top">
+        <img src="/Images/photo_5916001925222567185_y.jpg" alt="Luxury Interior">
+      </div>
+      <div class="luxury-img luxury-img--bottom">
+        <img src="/Images/photo_5916001925222567190_x.jpg" alt="Luxury Exterior">
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="test-header">
+      <h2>Here is What <span>Warm Words<br>Our Client</span> Say.</h2>
+    </div>
+    <div style="display:flex;gap:50px;align-items:flex-start;">
+      <div>
+        <div style="font-size:18px;font-weight:900;color:var(--orange);letter-spacing:1px;margin-bottom:8px;">COMMENTS:
+        </div>
+      </div>
+      <div>
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div>
+            <div style="font-size:52px;font-weight:900;line-height:1;">4.80</div>
+            <div style="font-size:12px;color:#888;">2,688 reviews</div>
+          </div>
+          <div style="font-size:14px;font-weight:700;max-width:340px;line-height:1.5;">From concept to reality, The team
+            turned my vision into a stunning reality. I couldnt be happier with this.</div>
+        </div>
+        <div class="test-quote">
+          "I absolutely love my new house. The clean structure, natural tones and minimalist interior create such a
+          calming & stylish atmosphere. Highly recommend their modern and luxury Homes to everyone."
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer>
+    <p>What are you waiting for? <a href="contact.html" class="footer-text">Order yours now.</a></p>
+  </footer>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script>
+    let cur = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    function move(dir) {
+      cur = (cur + dir + slides.length) % slides.length;
+      document.getElementById('track').style.transform = `translateX(-${cur * 100}%)`;
+    }
+  </script>
+
+  <!-- Portfolio Animations -->
+  <script src="portfolio-animations.js"></script>
+
+</body>
+
+</html>
